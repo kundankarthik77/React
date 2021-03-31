@@ -21,16 +21,6 @@ class MoviesTable extends Component {
           sortColumn={sortColumn}
           onSort={onSort}
         />
-        <thead>
-          <tr>
-            <th onClick={() => this.raiseSort("title")}>Title</th>
-            <th onClick={() => this.raiseSort("genre.name")}>Genre</th>
-            <th onClick={() => this.raiseSort("numberInStock")}>Stock</th>
-            <th onClick={() => this.raiseSort("dailyRentalRate")}>Rate</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
         <tbody>
           {movies.map((movie) => (
             <tr key={movie._id}>
@@ -58,4 +48,3 @@ class MoviesTable extends Component {
 }
 
 export default MoviesTable;
-props;
